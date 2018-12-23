@@ -28,7 +28,7 @@ var Css = function () {
                 key: "operation_css",
                 value: function operation_css(file) {
                         return new Promise(function (resolve, reject) {
-                                Promise.resolve(file).then(utils.read_node).then(instance.parse_css).then(instance.find_css_elements).catch(function (error) {
+                                Promise.resolve(file).then(utils.read_node).then(instance.parse_css).catch(function (error) {
                                         console.log(error);
                                 }).then(function () {
                                         resolve();

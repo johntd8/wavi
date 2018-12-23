@@ -1,23 +1,27 @@
-##WAVI Web Application Viewer 2 (Node.js)
+##WAVI_M Web Application Viewer 2 (Node.js)
 
 Generate a svg class diagram for your node.js web application.
 
 WAVI is intended for developers who wish to document their web application or as a reverse engineering tool to recover 
-the structure of a web application.
+the structure of a web application.  This (WAVI_M) is a modified version, whose goal is to make the svg files more readable for large diagrams, 
+and when examining large directories,  while providing additional options.  In order to accomplish this, some modifications are proposed:
 
+-  Remove CSS elements from diagrams
+-  Allow limits to be set on directory recursion
+-  Allow the option to reverse-engineer single or selected files, no matter their placement on the directory tree
+-  Allow option to examine to remove functions from UML diagrams.  Useful when wanting to look at how only the files and classes 
+   are interconnected
+-  Include CSS dependencies in HTML files
+
+Additional options in the future:
+
+-  Attach a new front end that will move away from svg files, and allow the adjustment of UML diagrams post-creation
+
+Additional suggestions, or changes to these suggestions, are welcome!
+
+(From the original README)
 Web applications pose unique challenges when it comes to understanding and maintaining their heterogeneous structures, which often involve complex interactions between elements from different languages. Accurate and up-to-date documentation is rarely available and this calls for the proposal of reverse engineering approaches for the recovery and representation of such structures. The proposed package presents our ongoing work on Web Application Viewer (WAVI), a tool able to reverse engineer a web application's structure.
 
-
-## Installation
-
-Install WAVI package using npm.
-
-    $ npm install wavi -g
-
-
-In Ubuntu, add sudo:
-
-    $ sudo npm install wavi -g
 
 ## Usage in your terminal (CLI): 
 
@@ -54,10 +58,6 @@ You can run wavi this way using nodejs keyword and you can also use the absolute
 [More at the wavi blog](https://blogwavi.wordpress.com/)
 
 
-##Contributions
-
-This is a pproject to help developers generate quality class diagram. WAVI is in development and all contributions are welcomed.
-For more info on the project contact me at jugle66@hotmail.com
 
 
 ## License

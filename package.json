@@ -21,11 +21,11 @@
     }
   ],
   "dependencies": {
-    "acorn": "^4.0.4",
+    "acorn": "^4.0.13",
     "acorn-umd": "^0.4.0",
     "async": "^2.1.4",
-    "babel-runtime": "^6.20.0",
     "babel-polyfill": "^6.20.0",
+    "babel-runtime": "^6.20.0",
     "cheerio": "^0.22.0",
     "co": "^4.6.0",
     "css": "^2.2.1",
@@ -42,7 +42,6 @@
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-runtime": "^6.15.0",
-    
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-es2016": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
@@ -51,7 +50,7 @@
   "bin": {
     "wavi": "bin/wavi"
   },
-  "script":
-{ "transpile" : "babel --source-maps --out-dir=es5 src" }
-  
+  "script": {
+    "transpile": "babel --source-maps --out-dir=es5 src"
+  }
 }
