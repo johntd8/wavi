@@ -11,7 +11,6 @@ and when examining large directories,  while providing additional options.  In o
 -  Allow the option to reverse-engineer single or selected files, no matter their placement on the directory tree
 -  Allow option to examine to remove functions from UML diagrams.  Useful when wanting to look at how only the files and classes 
    are interconnected
--  Include CSS dependencies in HTML files
 
 Additional options in the future:
 
