@@ -84,8 +84,6 @@ var Javascript = function () {
                                 var classId = fileInfo.id;
                                 instance.checkImports(ast, fileInfo);
 
-                                
-
                                 var curClassId = classId;
                                 
 

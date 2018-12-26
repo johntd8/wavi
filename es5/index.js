@@ -144,7 +144,7 @@ var Wavi = function () {
                         color = "lightgreen";
                         type = "css";
                     }
-                    var id = db.addClass({ name: item, fill: color, type: type, cluster: "cluster_", is_global: true });
+                    var id = db.addClass({ name: item, fill: color, type: type, cluster: "cluster_"});
                     newList.push({ name: item, id: id, cluster: "cluster_" });
                     ids += 1;
                 });
