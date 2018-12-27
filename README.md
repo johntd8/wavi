@@ -1,16 +1,19 @@
-##WAVI_M Web Application Viewer 2 (Node.js)
+## WAVI_M Web Application Viewer 2 (Node.js)
 
 Generate a svg class diagram for your node.js web application.
 
 WAVI is intended for developers who wish to document their web application or as a reverse engineering tool to recover 
-the structure of a web application.  This (WAVI_M) is a modified version, whose goal is to make the svg files more readable for large diagrams, 
-and when examining large directories,  while providing additional options.  In order to accomplish this, some modifications are proposed:
+the structure of a web application.  This (WAVI_M) is a modified version, whose goal is to make the svg files more readable for large applicatioins,  while providing additional options.  In order to accomplish this, some modifications are proposed:
 
--  Remove CSS elements from diagrams
+-  Allow option to remove functions from UML diagrams, looking at file depedencies only.  Useful when wanting to quickly examine how changing one file
+   could affect another.  This was a popular request for the old application.  (current priority)
+-  After this, allow the option to look at class dependencies as well.  Useful for editing classes within a file, if they exist.
 -  Allow limits to be set on directory recursion
 -  Allow the option to reverse-engineer single or selected files, no matter their placement on the directory tree
--  Allow option to examine to remove functions from UML diagrams.  Useful when wanting to look at how only the files and classes 
-   are interconnected
+-  Allow typescript support
+-  Implement a robust testing paradigm to ensure further modifcations do not break the application
+
+-  *Remove CSS elements from diagrams (completed)*
 
 Additional options in the future:
 
